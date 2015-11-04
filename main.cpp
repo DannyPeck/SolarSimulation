@@ -126,7 +126,7 @@ int main() {
         //run simulation
         bool valid = false;
         while(!valid) {
-            // If valid is equal is true then there will be no more collisions
+            // If valid is equal to true then there will be no more collisions
             // If valid is false then the state has changed and we must rerun the simulation
             // The state change occurs when a time t with collisions has resolved (all collisions in that t resolve first)
             cout << "Initializing new Universe" << endl;

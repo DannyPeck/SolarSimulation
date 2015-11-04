@@ -91,10 +91,10 @@ bool Universe::simulate() {
                         // Sets the involved planets collided flag so that they are not considered again
                         // Remember that this is happening in a solid time t and that it is re evaluated at each t
                         planets[b].setCollided(true);
-
+                        
+                        // Tracks number of planetoids involved in the collision
                         collideNum++;
-                    } // end collision detection
-                    else {
+                    } else {
                         // Print's if No collision occurred
                         cout << "No Collision" << endl;
                     }
