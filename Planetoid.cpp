@@ -1,8 +1,6 @@
 #include "Planetoid.h"
 #include <vector>
 
-using namespace std;
-
 // Planetoid Default Constructor
 Planetoid::Planetoid(){
 

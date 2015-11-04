@@ -3,8 +3,6 @@
 
 #include <vector>
 
-using namespace std;
-
 class Planetoid {
     private:
         int mass;
