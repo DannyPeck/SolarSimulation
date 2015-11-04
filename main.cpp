@@ -28,10 +28,11 @@ int main() {
         ss << line;
 
         int* uData = new int[4];
+        
         //Pushes all universe data into array to store it
         for(int u = 0; u < 4; u++) {
             getline(ss, temp, ' ');
-            uData[u] = atoi(temp.c_str());
+            uData[u] = atoi(temp.c_str()); // Converts to int
         }
 
         //Clears stream for next use
@@ -62,10 +63,11 @@ int main() {
 
             //Create an array to hold the parsed data
             int* pData = new int[7];
-
+            
+            // Pushes all planetoid data into array to store it
             for(int i = 0; i < 7; i++) {
                 getline(ss, temp, ' ');
-                pData[i] = atoi(temp.c_str());
+                pData[i] = atoi(temp.c_str()); // Converts to int
             }
 
             //Human readable planetoid data
