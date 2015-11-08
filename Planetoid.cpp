@@ -83,7 +83,7 @@ int Planetoid::getVZ() {
     return vZ;
 }
 
-// Planetoid Destructor
+// Planetoid Deconstructor
 Planetoid::~Planetoid() {
 
 }

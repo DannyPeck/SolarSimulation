@@ -123,6 +123,8 @@ int main() {
         //Build Universe (logical big bang)
         universe = new Universe(pNum, planetoids, xGridWidth, yGridDepth, zGridHeight);
 
+        delete[] planetoids;
+
         //run simulation
         bool valid = false;
         while(!valid) {
@@ -145,7 +147,7 @@ int main() {
         for(int f = 0; f < universe->getPlanetoidNum(); f++) {
             outFile << tPlanets[f].getMass() << " " << tPlanets[f].getX() << " " << tPlanets[f].getY() << " " << tPlanets[f].getZ() << " " << tPlanets[f].getVX() << " " << tPlanets[f].getVY() << " " << tPlanets[f].getVZ() << endl;
         }
-
+         
         // Close outFile
         outFile.close();
     }
